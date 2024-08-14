@@ -1,0 +1,14 @@
+D:\Others\Practice\C#\C-Sharp-with-Mosh\bin\Debug\net8.0\C-Sharp-with-Mosh.exe
+D:\Others\Practice\C#\C-Sharp-with-Mosh\bin\Debug\net8.0\C-Sharp-with-Mosh.deps.json
+D:\Others\Practice\C#\C-Sharp-with-Mosh\bin\Debug\net8.0\C-Sharp-with-Mosh.runtimeconfig.json
+D:\Others\Practice\C#\C-Sharp-with-Mosh\bin\Debug\net8.0\C-Sharp-with-Mosh.dll
+D:\Others\Practice\C#\C-Sharp-with-Mosh\bin\Debug\net8.0\C-Sharp-with-Mosh.pdb
+D:\Others\Practice\C#\C-Sharp-with-Mosh\obj\Debug\net8.0\C-Sharp-with-Mosh.GeneratedMSBuildEditorConfig.editorconfig
+D:\Others\Practice\C#\C-Sharp-with-Mosh\obj\Debug\net8.0\C-Sharp-with-Mosh.AssemblyInfoInputs.cache
+D:\Others\Practice\C#\C-Sharp-with-Mosh\obj\Debug\net8.0\C-Sharp-with-Mosh.AssemblyInfo.cs
+D:\Others\Practice\C#\C-Sharp-with-Mosh\obj\Debug\net8.0\C-Sharp-with-Mosh.csproj.CoreCompileInputs.cache
+D:\Others\Practice\C#\C-Sharp-with-Mosh\obj\Debug\net8.0\C-Sharp-with-Mosh.dll
+D:\Others\Practice\C#\C-Sharp-with-Mosh\obj\Debug\net8.0\refint\C-Sharp-with-Mosh.dll
+D:\Others\Practice\C#\C-Sharp-with-Mosh\obj\Debug\net8.0\C-Sharp-with-Mosh.pdb
+D:\Others\Practice\C#\C-Sharp-with-Mosh\obj\Debug\net8.0\C-Sharp-with-Mosh.genruntimeconfig.cache
+D:\Others\Practice\C#\C-Sharp-with-Mosh\obj\Debug\net8.0\ref\C-Sharp-with-Mosh.dll

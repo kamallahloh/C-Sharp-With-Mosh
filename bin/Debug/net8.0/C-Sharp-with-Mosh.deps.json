@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "C-Sharp-with-Mosh/1.0.0": {
+        "runtime": {
+          "C-Sharp-with-Mosh.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "C-Sharp-with-Mosh/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
