@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("C-Sharp-with-Mosh")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bbd888acb0f83c27a9bc32fad5b7616752e3991d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d3dab5179b2e4afb4fbd01d3c37a3817df37c47")]
 [assembly: System.Reflection.AssemblyProductAttribute("C-Sharp-with-Mosh")]
 [assembly: System.Reflection.AssemblyTitleAttribute("C-Sharp-with-Mosh")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

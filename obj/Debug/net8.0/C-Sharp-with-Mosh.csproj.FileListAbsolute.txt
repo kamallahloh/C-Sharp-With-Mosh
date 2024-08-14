@@ -12,3 +12,4 @@ D:\Others\Practice\C#\C-Sharp-with-Mosh\obj\Debug\net8.0\refint\C-Sharp-with-Mos
 D:\Others\Practice\C#\C-Sharp-with-Mosh\obj\Debug\net8.0\C-Sharp-with-Mosh.pdb
 D:\Others\Practice\C#\C-Sharp-with-Mosh\obj\Debug\net8.0\C-Sharp-with-Mosh.genruntimeconfig.cache
 D:\Others\Practice\C#\C-Sharp-with-Mosh\obj\Debug\net8.0\ref\C-Sharp-with-Mosh.dll
+D:\Others\Practice\C#\C-Sharp-with-Mosh\obj\Debug\net8.0\C-Sharp-with-Mosh.sourcelink.json
