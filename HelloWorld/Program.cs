@@ -4,38 +4,37 @@
     {
         static void Main(string[] args)
         {
-            int number;
-            int Number = 1;
-            const float b = 2.321f;
+            var letter = 'A';
+            // Format string
+            Console.WriteLine("{0} {1}",byte.MinValue, byte.MaxValue);
+            Console.WriteLine("{0} {1}",float.MinValue, float.MaxValue);
 
-            var @var = "reserved";
+            // Implicit type conversion
+            byte b = 1;
+            int a = b;
+            // explicit conversion
+            // CAST
+            int c = 256;
+            byte d = (byte)c;
 
-            var strFirstName = "Hungarian notaion don't use";
-            const string Pascal = "pascal case for constants";
+            // convert
 
-            // Primative types:
-            // byte short int long 
-            // float => 1.23f // double default date type for numbers // decimal => 1.23m
-            // char 
-            // bool
+            string s = "1";
+            int i = Convert.ToInt32(s);
+            int j = int.Parse(s);
 
-            // non primative
-            // String Array Enum Class
-
-            //////////////
-            ///
-            // over flowing
-
-            checked
+            try
             {
-                byte numb = 255; // max value
-                numb = (byte)(numb + 1); // == 0 System.OverflowException: 'Arithmetic operation resulted in an overflow.'
 
-                Console.WriteLine(numb);
+                var num = "1234";
+                byte bytt = Convert.ToByte(num);
+                Console.WriteLine(bytt);
             }
+            catch (Exception)
+            {
 
-
-
+                Console.WriteLine("errorrrrr");
+            }
         }
     }
 }
