@@ -4,3 +4,10 @@
 # Ignore build output directories
 bin/
 obj/
+
+
+# If the bin/ and obj/ directories are still being tracked by Git, it might be because they were added to the repository before the .gitignore was set up.
+#git rm -r --cached bin/
+#git rm -r --cached obj/
+#git commit -m "Stop tracking bin and obj folders"
+#git push origin <branch-name>
