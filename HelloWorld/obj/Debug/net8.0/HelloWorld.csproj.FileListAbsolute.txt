@@ -1,0 +1,15 @@
+D:\Training\C#\C-Sharp-With-Mosh\HelloWorld\bin\Debug\net8.0\HelloWorld.exe
+D:\Training\C#\C-Sharp-With-Mosh\HelloWorld\bin\Debug\net8.0\HelloWorld.deps.json
+D:\Training\C#\C-Sharp-With-Mosh\HelloWorld\bin\Debug\net8.0\HelloWorld.runtimeconfig.json
+D:\Training\C#\C-Sharp-With-Mosh\HelloWorld\bin\Debug\net8.0\HelloWorld.dll
+D:\Training\C#\C-Sharp-With-Mosh\HelloWorld\bin\Debug\net8.0\HelloWorld.pdb
+D:\Training\C#\C-Sharp-With-Mosh\HelloWorld\obj\Debug\net8.0\HelloWorld.GeneratedMSBuildEditorConfig.editorconfig
+D:\Training\C#\C-Sharp-With-Mosh\HelloWorld\obj\Debug\net8.0\HelloWorld.AssemblyInfoInputs.cache
+D:\Training\C#\C-Sharp-With-Mosh\HelloWorld\obj\Debug\net8.0\HelloWorld.AssemblyInfo.cs
+D:\Training\C#\C-Sharp-With-Mosh\HelloWorld\obj\Debug\net8.0\HelloWorld.csproj.CoreCompileInputs.cache
+D:\Training\C#\C-Sharp-With-Mosh\HelloWorld\obj\Debug\net8.0\HelloWorld.sourcelink.json
+D:\Training\C#\C-Sharp-With-Mosh\HelloWorld\obj\Debug\net8.0\HelloWorld.dll
+D:\Training\C#\C-Sharp-With-Mosh\HelloWorld\obj\Debug\net8.0\refint\HelloWorld.dll
+D:\Training\C#\C-Sharp-With-Mosh\HelloWorld\obj\Debug\net8.0\HelloWorld.pdb
+D:\Training\C#\C-Sharp-With-Mosh\HelloWorld\obj\Debug\net8.0\HelloWorld.genruntimeconfig.cache
+D:\Training\C#\C-Sharp-With-Mosh\HelloWorld\obj\Debug\net8.0\ref\HelloWorld.dll
