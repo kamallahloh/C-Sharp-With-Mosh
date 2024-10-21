@@ -186,13 +186,21 @@ namespace HelloWorld
             // RANDOM
 
             var random = new Random();
+
+            char[] buffer = new char[10];
+
             for (int i = 0; i < 10; i++)
             {
                 var x = random.Next(97, 122 + 1); // a 97 z 122 random string
                 var y = 'a'+(random.Next(0, 26 + 1)); // a 97 z 122 random string
-                Console.Write((char)x);
-                Console.Write((char)y);
+                //Console.Write((char)x);
+                //Console.Write((char)y);
+                buffer[i] = (char)y;
             }
+
+            var password = new String(buffer);
+            Console.WriteLine(password);
+
         }
         //public enum MyEnum // basically it's a new Type 
         //{
