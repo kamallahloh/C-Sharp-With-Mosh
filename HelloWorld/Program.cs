@@ -124,18 +124,40 @@ namespace HelloWorld
 
             // Conditional statments If else Switch ternary operator
 
-            var x = 1;
-            switch (x)
+            //var x = 1;
+            //switch (x)
+            //{
+            //    case 0:
+            //    case 1:
+            //        // apply for both cases
+            //        break;
+            //    default:
+            //        //
+            //        break;
+            //}
+            static string validNum(int num)
             {
-                case 0:
-                case 1:
-                    // apply for both cases
-                    break;
-                default:
-                    //
-                    break;
+                return num > 0 && num < 10 ? "Valid" : "Invalid";
             }
 
+            Console.WriteLine(validNum(1));
+            Console.WriteLine(validNum(13));
+
+            static int maxNum(int num1, int num2) {
+                return Math.Max(num1, num2);
+                //return num1 > num2 ? num1 : num2;
+            }
+
+            Console.WriteLine(maxNum(1,2));
+            Console.WriteLine(maxNum(13,2));
+
+            static string imagePosition(int height , int width)
+            {
+                return height > width ? "Protrait" : "Landscape";
+            }
+
+            Console.WriteLine(imagePosition(300,500));
+            Console.WriteLine(imagePosition(1300,500));
 
 
         }
