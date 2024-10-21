@@ -4,7 +4,7 @@ namespace HelloWorld
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static int Main(string[] args)
         {
             // Arrays and Lists and (multidimensional array) 
 
@@ -44,7 +44,7 @@ namespace HelloWorld
             var otherArray = new int[3];
             Console.WriteLine("");
             Console.WriteLine("copy:"); // 0 0 53
-            Array.Copy(numbers,otherArray,3);
+            Array.Copy(numbers, otherArray, 3);
             foreach (var number in otherArray)
                 Console.Write(number + " ");
             //
@@ -71,6 +71,30 @@ namespace HelloWorld
             Console.WriteLine("");
 
             // reverse()   // ALL METHODS are static
+
+
+
+            // LISTS not fix size but dynamic
+
+            var list = new List<int>() { 1, 2, 3, 4 };
+
+            // Add() AddRange() Remove() RemoveAt() IndexOf() Contains() Count;
+
+            list.Add(1);
+            list.AddRange(numbers); // add IEnumerable<int> I interface Enumerable instance of array or list
+
+            list.IndexOf(1); // index of number 1 = 0
+            list.LastIndexOf(1); // 4
+
+            Console.WriteLine(list.Count);
+
+            list.RemoveAt(0);
+            list.Remove(2);
+            list.RemoveAll(x => x == 4);
+            list.Clear();
+            Console.WriteLine(list.Count);
+
+
         }
 
     }
