@@ -6,209 +6,72 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            //var letter = 'A';
-            //// Format string
-            //Console.WriteLine("{0} {1}",byte.MinValue, byte.MaxValue);
-            //Console.WriteLine("{0} {1}",float.MinValue, float.MaxValue);
+            // Arrays and Lists and (multidimensional array) 
 
-            //// Implicit type conversion
-            //byte b = 1;
-            //int a = b;
-            //// explicit conversion
-            //// CAST
-            //int c = 256;
-            //byte d = (byte)c;
+            var numbers = new int[5] { 11, 2, 53, 24, 05 }; // object initialization syntax
 
-            //// convert
+            // rec or jagged
+            // 2D array
+            // row , col
+            var rectangular = new int[3, 5] { { 1, 2, 3, 4, 5 }, { 11, 12, 13, 14, 15 }, { 21, 22, 23, 24, 25 } };
+            // 3D array
+            // row , col , dep
+            var zArray = new int[2, 2, 2] { { { 1, 2 }, { 3, 4 } }, { { 5, 6 }, { 7, 8 } } };
 
-            //string s = "1";
-            //int i = Convert.ToInt32(s);
-            //int j = int.Parse(s);
-
-            //try
-            //{
-
-            //    var num = "1234";
-            //    byte bytt = Convert.ToByte(num);
-            //    Console.WriteLine(bytt);
-            //}
-            //catch (Exception)
-            //{
-
-            //    Console.WriteLine("errorrrrr");
-            //}
-
-            //// Non-Primitive Types
-            //// Classes
-            //// Access modifier      identifier
-            //// Public        class   Person
-
-            //// Object
-            //// Person person = new Person();
-            //// var person = new Person();
-
-            //// Static modifier can be accessed from the Class it self directly like Person.Age(); not from the Object
-            //// that to allocate a single instance in the memory for this static method
+            // jagged
+            var jagged = new int[3][] { new int[2] { 1, 2 }, new int[4] { 2, 3, 4, 5 }, new int[3] { 6, 7, 8 } };
+            // XXX var jagged = new int[3][] { { 1, 2 },  { 2, 3, 4, 5 }, { 6, 7, 8 } };
+            //Console.WriteLine(rectangular[2, 2]); // 23
+            //Console.WriteLine(zArray[1, 0, 1]); // 6
+            //Console.WriteLine(jagged[1][3]); // 5
 
 
-            //// struct vs Classes  =>   structures used for small classes with multiple instances like coordination x y or RGB.
-            /// Structures are Value Types allocated in Stack automatically 
-            /// where Classes and Reference Types allocated in heap manually with (new) operator and stayed for a while.
-            /// memory management and allocation and garbage collection in CLR
-            /// with pass by reference you point to the address of the allocated memory in the heap and store the address in the var
-            /// 
-            /// 
-            //// Arrays
+            // Array Methods
 
-            //// declare array     set size   
-            ////int[] numbers = new int[8] { 1, 2, 3, 4, 5, 6, 7, 8 };
-            //var numbers = new int[8] { 1, 2, 3, 4, 5, 6, 7, 8 };
-            //Console.WriteLine(numbers[1]); // 2
-            //Console.WriteLine(numbers[15]); // 0 default value /bool false /string "" 
-            ////
+            // length property no () 
+            // indexOf(array,value); 
+            Console.WriteLine("Numbers");
+            Array.IndexOf(numbers, 11); // 0
+            foreach (var number in numbers)
+                Console.Write(number + " "); // 11 2 53 24 5
+            // Clear(array,index,length); default set int to 0 // bool false // str or others to null
+            Console.WriteLine("");
+            Console.WriteLine("Clear:");
+            //Array.Clear(numbers, 0, 2); // 0 0 53 24 5
+            foreach (var number in numbers)
+                Console.Write(number + " ");
+            // copy(source,dist,numberOfCoppied);
+            var otherArray = new int[3];
+            Console.WriteLine("");
+            Console.WriteLine("copy:"); // 0 0 53
+            Array.Copy(numbers,otherArray,3);
+            foreach (var number in otherArray)
+                Console.Write(number + " ");
+            //
 
-            //// Strings   /// strings are Immutable XXX can't change it.
-            //// String concatenation
-            //string fName = "Kamal";
-            //string lName = "Lahloh";
-            //// with Class String you need to import the String class first.
-            //String lName2 = "Lahloh";
-            //Int32 i = 5; int j = 6; // same thing with import Int32
-
-            //string name1 = fName + " " + lName;
-            //string name2 = string.Format("{0} {1}", fName, lName);
-            //string name3 = $"{fName} {lName}";
-
-            //Console.WriteLine("name3: " + name3);
-
-            //string list = string.Join(",", numbers);
-            //Console.WriteLine(list);
-
-            //// Escape characters \n \t \\ \' \"
-
-            //// PATHS with Verbatim string ****
-            ////string path = "c:\\desktop\\folder";
-            //string path = @"c:\desktop\folder";
-
-            //Console.WriteLine(path);
+            Console.WriteLine("");
+            Console.WriteLine("modify the copy:");
+            otherArray[0] = 33;
+            Console.WriteLine("");
+            Console.WriteLine("original"); // 0 0 53 24 5 !!!!!!!!!!!!!! immutable
+            foreach (var number in numbers)
+                Console.Write(number + " ");
+            Console.WriteLine("");
+            Console.WriteLine("the copy:"); // 33 0 53   
+            foreach (var number in otherArray)
+                Console.Write(number + " ");
 
 
-            //// Enums a set of name/value pairs of related (constants)  
-            //// ** declare outside other method since it is a new type need to be defined at nameSpace level or Class level
-            //Console.WriteLine(MyEnum.const1.ToString()); // const1
-            //Console.WriteLine(MyEnum.const1); // const1  // Console.WriteLine apply ToString() to all its arguments
-            //Console.WriteLine((int)MyEnum.const1); // 1
+            // sort();
+            Array.Sort(numbers);
+            Console.WriteLine("");
+            Console.WriteLine("sort");
+            foreach (var number in numbers)
+                Console.Write(number + " "); // a,b => a-b 2 5 11 24 53
+            Console.WriteLine("");
 
-
-            //// casting Enums
-
-            //var id = 2;
-            //Console.WriteLine((MyEnum)id); // const2
-
-            //var string1 = "const4";
-            ////Enum.Parse(typeof(MyEnum), string1); // create an object need to be casted to our MyEnum
-            ////var newEnum = (MyEnum)Enum.Parse(typeof(MyEnum), string1); // create an object need to be casted to our MyEnum
-
-            ////Console.WriteLine(newEnum);
-
-            //// solve casting error
-            //if (Enum.TryParse<MyEnum>(string1, out var newEnum2) && Enum.IsDefined(typeof(MyEnum), newEnum2))
-            //{
-            //    Console.WriteLine(newEnum2);
-            //}
-            //else
-            //{
-            //    Console.WriteLine("Invalid enum value");
-            //}
-
-
-            // Conditional statements If else Switch ternary operator
-
-            //var x = 1;
-            //switch (x)
-            //{
-            //    case 0:
-            //    case 1:
-            //        // apply for both cases
-            //        break;
-            //    default:
-            //        //
-            //        break;
-            //}
-            //static string validNum(int num)
-            //{
-            //    return num > 0 && num < 10 ? "Valid" : "Invalid";
-            //}
-
-            //Console.WriteLine(validNum(1));
-            //Console.WriteLine(validNum(13));
-
-            //static int maxNum(int num1, int num2)
-            //{
-            //    return Math.Max(num1, num2);
-            //    //return num1 > num2 ? num1 : num2;
-            //}
-
-            //Console.WriteLine(maxNum(1, 2));
-            //Console.WriteLine(maxNum(13, 2));
-
-            //static string imagePosition(int height, int width)
-            //{
-            //    return height > width ? "Portrait" : "Landscape";
-            //}
-
-            //Console.WriteLine(imagePosition(300, 500));
-            //Console.WriteLine(imagePosition(1300, 500));
-
-            //Console.WriteLine("Speed Limit: ");
-            //var speedRead = Console.ReadLine();
-            //int speedLimit = Convert.ToInt32(speedRead);
-
-            //Console.WriteLine("Car Speed: ");
-            //var speedRead2 = Console.ReadLine();
-            //int carSpeed = Convert.ToInt32(speedRead2);
-
-            //System.Console.WriteLine(speedLimitCalc(speedLimit, carSpeed));
-
-            //string speedLimitCalc(int speedLimit, int carSpeed)
-            //{
-            //    if (carSpeed <= speedLimit) { return "Ok"; }
-
-            //    int overSpeed = carSpeed - speedLimit;
-
-            //    if (overSpeed < 60)
-            //        return Convert.ToString(Math.Ceiling((double)overSpeed / 5));
-            //    else
-            //        return "License Suspended";
-            //}
-
-
-            // RANDOM
-
-            var random = new Random();
-
-            char[] buffer = new char[10];
-
-            for (int i = 0; i < 10; i++)
-            {
-                var x = random.Next(97, 122 + 1); // a 97 z 122 random string
-                var y = 'a'+(random.Next(0, 26 + 1)); // a 97 z 122 random string
-                //Console.Write((char)x);
-                //Console.Write((char)y);
-                buffer[i] = (char)y;
-            }
-
-            var password = new String(buffer);
-            Console.WriteLine(password);
-
+            // reverse()   // ALL METHODS are static
         }
-        //public enum MyEnum // basically it's a new Type 
-        //{
-        //    const1 = 1, // = 0, default values but not best practice since the order maybe changed later
-        //    const2 = 2, // = 1,
-        //    const3 = 3, // = 2,
-        //}
-
 
     }
 }
