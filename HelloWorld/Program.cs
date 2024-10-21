@@ -4,37 +4,38 @@
     {
         static void Main(string[] args)
         {
-            // UDEMY C# Basics for Beginners: Learn C# Fundamentals by Coding
-            // https://www.udemy.com/course/csharp-tutorial-for-beginners/
-            //Created by Mosh Hamedani
+            int number;
+            int Number = 1;
+            const float b = 2.321f;
 
-            /*
-             
-             .NET
-            framework
-            windows
-            f#
-            VB
-            CLR
-            Common language runtime
-            c++
-            compiler native code
-            not run on linux
-            lang bytecode IL code to bnative code by CLR 
-            CLR different machines
+            var @var = "reserved";
+
+            var strFirstName = "Hungarian notaion don't use";
+            const string Pascal = "pascal case for constants";
+
+            // Primative types:
+            // byte short int long 
+            // float => 1.23f // double default date type for numbers // decimal => 1.23m
+            // char 
+            // bool
+
+            // non primative
+            // String Array Enum Class
+
+            //////////////
+            ///
+            // over flowing
+
+            checked
+            {
+                byte numb = 255; // max value
+                numb = (byte)(numb + 1); // == 0 System.OverflowException: 'Arithmetic operation resulted in an overflow.'
+
+                Console.WriteLine(numb);
+            }
 
 
-            CLASSES 
-            class container
-            Data state attribute
-            Methods function 
 
-            related Classes => namespaces
-
-            related namesopaces => Assembly DLL dynamic linked Library
-
-            */
-            Console.WriteLine("Hello World");
         }
     }
 }
