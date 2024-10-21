@@ -38,29 +38,56 @@ namespace HelloWorld
             //    Console.WriteLine("errorrrrr");
             //}
 
-            // Non-Primative Types
-            // Classes
-            // Access modifier      identidier
-            // Public        class   Person
+            //// Non-Primative Types
+            //// Classes
+            //// Access modifier      identidier
+            //// Public        class   Person
 
-            // Object
-            // Person person = new Person();
-            // var person = new Person();
+            //// Object
+            //// Person person = new Person();
+            //// var person = new Person();
 
-            // Static modifier can be accessed from the Class it self directly like Person.Age(); not from the Object
-            // that to alocate a single instance in the memory for this static method
+            //// Static modifier can be accessed from the Class it self directly like Person.Age(); not from the Object
+            //// that to alocate a single instance in the memory for this static method
 
 
-            // struct vs Classes  =>   structures used for small classes with multiple instances like coordination x y or RGB.
+            //// struct vs Classes  =>   structures used for small classes with multiple instances like coordination x y or RGB.
 
-            // Arrays
+            //// Arrays
 
-            // declare array     set size   
-            //int[] numbers = new int[8] { 1, 2, 3, 4, 5, 6, 7, 8 };
+            //// declare array     set size   
+            ////int[] numbers = new int[8] { 1, 2, 3, 4, 5, 6, 7, 8 };
             var numbers = new int[8] { 1, 2, 3, 4, 5, 6, 7, 8 };
-            Console.WriteLine(numbers[1]); // 2
-            Console.WriteLine(numbers[15]); // 0 default value /bool false /string "" 
-            //
+            //Console.WriteLine(numbers[1]); // 2
+            //Console.WriteLine(numbers[15]); // 0 default value /bool false /string "" 
+            ////
+
+            // Strings   /// strings are Immutable XXX can't change it.
+            // String concatination
+            string fName = "Kamal";
+            string lName = "Lahloh";
+            // with Class String you need to import the String class first.
+            String lName2 = "Lahloh";
+            Int32 i = 5; int j = 6; // same thing with import Int32
+
+            string name1 = fName + " " + lName;
+            string name2 = string.Format("{0} {1}", fName, lName);
+            string name3 = $"{fName} {lName}";
+
+            Console.WriteLine("name3: " + name3);
+
+            string list = string.Join(",", numbers);
+            Console.WriteLine(list);
+
+            // Escape characters \n \t \\ \' \"
+
+            // PATHS with Verbatim string ****
+            //string path = "c:\\desktop\\folder";
+            string path = @"c:\desktop\folder";
+
+
+
+
 
 
 
