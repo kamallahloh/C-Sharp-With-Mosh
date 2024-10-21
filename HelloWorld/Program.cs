@@ -38,9 +38,9 @@ namespace HelloWorld
             //    Console.WriteLine("errorrrrr");
             //}
 
-            //// Non-Primative Types
+            //// Non-Primitive Types
             //// Classes
-            //// Access modifier      identidier
+            //// Access modifier      identifier
             //// Public        class   Person
 
             //// Object
@@ -48,13 +48,13 @@ namespace HelloWorld
             //// var person = new Person();
 
             //// Static modifier can be accessed from the Class it self directly like Person.Age(); not from the Object
-            //// that to alocate a single instance in the memory for this static method
+            //// that to allocate a single instance in the memory for this static method
 
 
             //// struct vs Classes  =>   structures used for small classes with multiple instances like coordination x y or RGB.
             /// Structures are Value Types allocated in Stack automatically 
             /// where Classes and Reference Types allocated in heap manually with (new) operator and stayed for a while.
-            /// memory managment and allocation and garbage collection in CLR
+            /// memory management and allocation and garbage collection in CLR
             /// with pass by reference you point to the address of the allocated memory in the heap and store the address in the var
             /// 
             /// 
@@ -68,7 +68,7 @@ namespace HelloWorld
             ////
 
             //// Strings   /// strings are Immutable XXX can't change it.
-            //// String concatination
+            //// String concatenation
             //string fName = "Kamal";
             //string lName = "Lahloh";
             //// with Class String you need to import the String class first.
@@ -94,7 +94,7 @@ namespace HelloWorld
 
 
             //// Enums a set of name/value pairs of related (constants)  
-            //// ** declaer outside other method since it is a new type need to be defined at nameSpace level or Class level
+            //// ** declare outside other method since it is a new type need to be defined at nameSpace level or Class level
             //Console.WriteLine(MyEnum.const1.ToString()); // const1
             //Console.WriteLine(MyEnum.const1); // const1  // Console.WriteLine apply ToString() to all its arguments
             //Console.WriteLine((int)MyEnum.const1); // 1
@@ -122,7 +122,7 @@ namespace HelloWorld
             //}
 
 
-            // Conditional statments If else Switch ternary operator
+            // Conditional statements If else Switch ternary operator
 
             //var x = 1;
             //switch (x)
@@ -143,25 +143,46 @@ namespace HelloWorld
             Console.WriteLine(validNum(1));
             Console.WriteLine(validNum(13));
 
-            static int maxNum(int num1, int num2) {
+            static int maxNum(int num1, int num2)
+            {
                 return Math.Max(num1, num2);
                 //return num1 > num2 ? num1 : num2;
             }
 
-            Console.WriteLine(maxNum(1,2));
-            Console.WriteLine(maxNum(13,2));
+            Console.WriteLine(maxNum(1, 2));
+            Console.WriteLine(maxNum(13, 2));
 
-            static string imagePosition(int height , int width)
+            static string imagePosition(int height, int width)
             {
-                return height > width ? "Protrait" : "Landscape";
+                return height > width ? "Portrait" : "Landscape";
             }
 
-            Console.WriteLine(imagePosition(300,500));
-            Console.WriteLine(imagePosition(1300,500));
+            Console.WriteLine(imagePosition(300, 500));
+            Console.WriteLine(imagePosition(1300, 500));
 
+            Console.WriteLine("Speed Limit: ");
+            var speedRead = Console.ReadLine();
+            int speedLimit = Convert.ToInt32(speedRead);
 
+            Console.WriteLine("Car Speed: ");
+            var speedRead2 = Console.ReadLine();
+            int carSpeed = Convert.ToInt32(speedRead2);
+
+            System.Console.WriteLine(speedLimitCalc(speedLimit, carSpeed));
+
+            string speedLimitCalc(int speedLimit, int carSpeed)
+            {
+                if (carSpeed <= speedLimit) { return "Ok"; }
+
+                int overSpeed = carSpeed - speedLimit;
+
+                if (overSpeed < 60)
+                    return Convert.ToString(Math.Ceiling((double)overSpeed / 5));
+                else
+                    return "License Suspended";
+            }
         }
-        //public enum MyEnum // basiclly it's a new Type 
+        //public enum MyEnum // basically it's a new Type 
         //{
         //    const1 = 1, // = 0, default values but not best practice since the order maybe changed later
         //    const2 = 2, // = 1,
