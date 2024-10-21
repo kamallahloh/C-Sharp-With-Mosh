@@ -135,51 +135,63 @@ namespace HelloWorld
             //        //
             //        break;
             //}
-            static string validNum(int num)
+            //static string validNum(int num)
+            //{
+            //    return num > 0 && num < 10 ? "Valid" : "Invalid";
+            //}
+
+            //Console.WriteLine(validNum(1));
+            //Console.WriteLine(validNum(13));
+
+            //static int maxNum(int num1, int num2)
+            //{
+            //    return Math.Max(num1, num2);
+            //    //return num1 > num2 ? num1 : num2;
+            //}
+
+            //Console.WriteLine(maxNum(1, 2));
+            //Console.WriteLine(maxNum(13, 2));
+
+            //static string imagePosition(int height, int width)
+            //{
+            //    return height > width ? "Portrait" : "Landscape";
+            //}
+
+            //Console.WriteLine(imagePosition(300, 500));
+            //Console.WriteLine(imagePosition(1300, 500));
+
+            //Console.WriteLine("Speed Limit: ");
+            //var speedRead = Console.ReadLine();
+            //int speedLimit = Convert.ToInt32(speedRead);
+
+            //Console.WriteLine("Car Speed: ");
+            //var speedRead2 = Console.ReadLine();
+            //int carSpeed = Convert.ToInt32(speedRead2);
+
+            //System.Console.WriteLine(speedLimitCalc(speedLimit, carSpeed));
+
+            //string speedLimitCalc(int speedLimit, int carSpeed)
+            //{
+            //    if (carSpeed <= speedLimit) { return "Ok"; }
+
+            //    int overSpeed = carSpeed - speedLimit;
+
+            //    if (overSpeed < 60)
+            //        return Convert.ToString(Math.Ceiling((double)overSpeed / 5));
+            //    else
+            //        return "License Suspended";
+            //}
+
+
+            // RANDOM
+
+            var random = new Random();
+            for (int i = 0; i < 10; i++)
             {
-                return num > 0 && num < 10 ? "Valid" : "Invalid";
-            }
-
-            Console.WriteLine(validNum(1));
-            Console.WriteLine(validNum(13));
-
-            static int maxNum(int num1, int num2)
-            {
-                return Math.Max(num1, num2);
-                //return num1 > num2 ? num1 : num2;
-            }
-
-            Console.WriteLine(maxNum(1, 2));
-            Console.WriteLine(maxNum(13, 2));
-
-            static string imagePosition(int height, int width)
-            {
-                return height > width ? "Portrait" : "Landscape";
-            }
-
-            Console.WriteLine(imagePosition(300, 500));
-            Console.WriteLine(imagePosition(1300, 500));
-
-            Console.WriteLine("Speed Limit: ");
-            var speedRead = Console.ReadLine();
-            int speedLimit = Convert.ToInt32(speedRead);
-
-            Console.WriteLine("Car Speed: ");
-            var speedRead2 = Console.ReadLine();
-            int carSpeed = Convert.ToInt32(speedRead2);
-
-            System.Console.WriteLine(speedLimitCalc(speedLimit, carSpeed));
-
-            string speedLimitCalc(int speedLimit, int carSpeed)
-            {
-                if (carSpeed <= speedLimit) { return "Ok"; }
-
-                int overSpeed = carSpeed - speedLimit;
-
-                if (overSpeed < 60)
-                    return Convert.ToString(Math.Ceiling((double)overSpeed / 5));
-                else
-                    return "License Suspended";
+                var x = random.Next(97, 122 + 1); // a 97 z 122 random string
+                var y = 'a'+(random.Next(0, 26 + 1)); // a 97 z 122 random string
+                Console.Write((char)x);
+                Console.Write((char)y);
             }
         }
         //public enum MyEnum // basically it's a new Type 
